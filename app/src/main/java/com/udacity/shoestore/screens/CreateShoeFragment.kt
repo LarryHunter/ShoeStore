@@ -26,13 +26,13 @@ class CreateShoeFragment : Fragment() {
 
         binding.shoe = shoe
 
-        binding.saveButton.setOnClickListener {
-            binding.shoe?.let { it_shoe ->
+        binding.saveButton.setOnClickListener { _ ->
+            binding.shoe?.let { it ->
                 viewModel.addShoe(
-                    it_shoe.name,
-                    it_shoe.size,
-                    it_shoe.company,
-                    it_shoe.description
+                    it.name,
+                    it.size,
+                    it.company,
+                    it.description
                 )
             }
             NavHostFragment.findNavController(this)
