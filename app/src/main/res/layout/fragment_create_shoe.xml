@@ -7,6 +7,10 @@
         <variable
             name="ShoViewModel"
             type="com.udacity.shoestore.screens.ShoeListViewModel" />
+
+        <variable
+            name="shoe"
+            type="com.udacity.shoestore.models.Shoe" />
     </data>
 
     <LinearLayout
@@ -43,6 +47,7 @@
             android:inputType="textCapWords"
             android:maxLines="1"
             android:singleLine="true"
+            android:text="@={shoe.name}"
             tools:ignore="LabelFor,SpeakableTextPresentCheck" />
 
         <TextView
@@ -61,6 +66,7 @@
             android:importantForAutofill="no"
             android:inputType="textCapWords"
             android:maxLines="1"
+            android:text="@={shoe.company}"
             tools:ignore="LabelFor,SpeakableTextPresentCheck" />
 
         <TextView
@@ -79,6 +85,7 @@
             android:importantForAutofill="no"
             android:inputType="numberDecimal"
             android:maxLines="1"
+            android:text="@={shoe.size}"
             tools:ignore="LabelFor,SpeakableTextPresentCheck" />
 
         <TextView
@@ -97,6 +104,7 @@
             android:importantForAutofill="no"
             android:inputType="textShortMessage"
             android:maxLines="1"
+            android:text="@={shoe.description}"
             tools:ignore="LabelFor,SpeakableTextPresentCheck" />
 
         <LinearLayout
