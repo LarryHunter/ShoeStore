@@ -10,12 +10,13 @@ import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.NavHostFragment
 import com.udacity.shoestore.R
 import com.udacity.shoestore.databinding.FragmentCreateShoeBinding
-import kotlinx.android.synthetic.main.fragment_create_shoe.*
+import com.udacity.shoestore.models.Shoe
 
 class CreateShoeFragment : Fragment() {
 
     private lateinit var binding: FragmentCreateShoeBinding
     private val viewModel: ShoeListViewModel by activityViewModels()
+    private val shoe: Shoe = Shoe(name = "", size = "", company = "", description = "")
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -23,13 +24,17 @@ class CreateShoeFragment : Fragment() {
     ): View {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_create_shoe, container, false)
 
+        binding.shoe = shoe
+
         binding.saveButton.setOnClickListener {
-            viewModel.addShoe(
-                nameBox.text.toString(),
-                sizeBox.text.toString(),
-                companyBox.text.toString(),
-                descriptionBox.text.toString()
-            )
+            binding.shoe?.let { it_shoe ->
+                viewModel.addShoe(
+                    it_shoe.name,
+                    it_shoe.size,
+                    it_shoe.company,
+                    it_shoe.description
+                )
+            }
             NavHostFragment.findNavController(this)
                 .navigate(CreateShoeFragmentDirections.actionCreateShoeFragmentToShoeListFragment())
         }
