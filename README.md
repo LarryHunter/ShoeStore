@@ -8,4 +8,10 @@ This project will consist of five screens. You don't have to create a shoe store
 4. Shoe Listing screen
 5. Shoe Detail screen for adding a new shoe
 
-This is a project I have done myself for the Udacity Kotlin Nanodegree. I used view Model- Live data architecture to save data. I learnt about navigation using navgraphs, fragments, creating menu options, saving data in viewModel , creating responsive layouts and so much more
+
+# General Instructions
+## There are 2 required sections to complete this project:
+
+Layouts
+Navigation
+The goal is to build an app that challenges you on the layouts and the navigation features. Following the project steps should accomplish this project with a successful build. Once done, you can either submit the code in a zip file format or through your github repo, either are acceptable.
