@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="ShoViewModel"
+            type="com.udacity.shoestore.screens.ShoeListViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/background_light"
+        android:orientation="vertical"
+        android:padding="40dp"
+        tools:context=".screens.CreateShoeFragment">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="8dp"
+            android:text="@string/add_shoe_title"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:text="@string/shoe_name"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <EditText
+            android:id="@+id/nameBox"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:autofillHints="@string/shoe_name"
+            android:background="@android:color/background_light"
+            android:elevation="5dp"
+            android:inputType="textCapWords"
+            android:maxLines="1"
+            android:singleLine="true"
+            tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:text="@string/shoe_company"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <EditText
+            android:id="@+id/companyBox"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@android:color/background_light"
+            android:elevation="5dp"
+            android:importantForAutofill="no"
+            android:inputType="textCapWords"
+            android:maxLines="1"
+            tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:text="@string/shoe_size"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <EditText
+            android:id="@+id/sizeBox"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@android:color/background_light"
+            android:elevation="5dp"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
+            android:maxLines="1"
+            tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:text="@string/shoe_description"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <EditText
+            android:id="@+id/descriptionBox"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@android:color/background_light"
+            android:elevation="5dp"
+            android:importantForAutofill="no"
+            android:inputType="textShortMessage"
+            android:maxLines="1"
+            tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/saveButton"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:text="@string/save"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                android:id="@+id/cancelButton"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:text="@string/cancel"
+                android:textColor="@color/cardview_light_background" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

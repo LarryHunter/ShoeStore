@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Shoe Store</string>
+    <string name="create_account_text">Create Account</string>
+    <string name="login_text">Login</string>
+    <string name="password_text">Password</string>
+    <string name="welcome_text">Welcome to My Shoe Store!</string>
+    <string name="welcome_secondary_text">Add a lot of shoes…</string>
+    <string name="instructions_title">Instructions</string>
+    <string name="instructions_secondary_text">Are you ready to add a lot of shoes?\nClick \'Add A Shoe\' to continue.</string>
+    <string name="shoe_name">Name</string>
+    <string name="shoe_company">Company</string>
+    <string name="shoe_size">Size</string>
+    <string name="shoe_description">Description</string>
+    <string name="add_shoe_title">Add a shoe</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="my_shoes_text">My Shoes</string>
+    <string name="add_new_pair_fab_desc">Add a new pair of shoes</string>
+    <string name="email_input_title">Email</string>
+    <string name="login_title_text">Larry\'s Shoe Store</string>
+    <string name="logout_text">Logout</string>
+</resources>
