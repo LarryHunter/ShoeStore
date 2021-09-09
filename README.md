@@ -10,8 +10,9 @@ This project will consist of five screens. You don't have to create a shoe store
 
 
 # General Instructions
-## There are 2 required sections to complete this project:
+## There were 2 required sections to complete this project:
 
-Layouts
-Navigation
-The goal is to build an app that challenges you on the layouts and the navigation features. Following the project steps should accomplish this project with a successful build. Once done, you can either submit the code in a zip file format or through your github repo, either are acceptable.
+* Layouts
+* Navigation
+
+The goal was to build an app that challenged me on the layouts and the navigation features. Following the project steps should accomplish this project with a successful build.
