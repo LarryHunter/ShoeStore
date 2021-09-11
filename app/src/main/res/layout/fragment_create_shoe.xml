@@ -3,11 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-
-        <variable
-            name="ShoViewModel"
-            type="com.udacity.shoestore.screens.ShoeListViewModel" />
-
         <variable
             name="shoe"
             type="com.udacity.shoestore.models.Shoe" />
